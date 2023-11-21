@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "fit-victory-app",
+    "slug": "fit-victory-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "fit-victory-app"
+}
