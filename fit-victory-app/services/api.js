@@ -1,22 +1,11 @@
 import axios from 'axios';
 
-export const api = axios.create({
+export const activityApi = axios.create({
   baseURL: "https://fiap-2023-2tdst-default-rtdb.firebaseio.com",
 });
 
-export const handleLogin = async () => {
-  api.post('/login', {
-      "login": email,
-      "password": password
-  }).then((resp) => {
-      console.log("Verificando acesso");
-      AsyncStorage.setItem('userToken', resp.data);
-      onLogin();
-  }).then(() => {
-      console.log("Acesso autorizado");
-      navigation.navigate("Home");
-  }).catch((err) => {
-      console.log(`Erro: ${err}`);
-      alert(`Usuario ou senha invalido.`);
-  });
-}
+//http://localhost:8080
+export const authApi = axios.create({
+  baseURL: "http://192.168.15.91:8080", // Substitua pelo seu endereço IP local ipconfig
+  timeout: 5000,
+});

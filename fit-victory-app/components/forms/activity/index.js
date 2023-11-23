@@ -62,7 +62,7 @@ export const ActivityForm = () => {
             placeholderTextColor={colors.text}
           />
           <ButtonPrimary text="Cadastrar" onPress={() => save({ title, date, duration, description })} />
-          <ButtonPrimary text="Gerar Atividade" onPress={runRandomFunction} />
+          <ButtonPrimary text="Gerar Sugestões" onPress={runRandomFunction} />
         </View>
       </View>
     </KeyboardAvoidingView>

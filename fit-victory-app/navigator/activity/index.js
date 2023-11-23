@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import {ActivityForm, ActivityList} from '../../components/index'
 import { ActivityContext } from '../../components/index'
-import { useActivityController } from '../../services/controllers/activityController';
+import { useActivityController } from '../../controllers/activityController';
 
 const { Screen, Navigator } = createBottomTabNavigator();
 

@@ -1,20 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { View } from 'react-native';
 import { globalStyles } from './styles.js';
 import { ActivityScreen, AccessScreen } from './screens/index.js';
-import { AuthProvider } from './context/authContext.js';
-import { useAuthController } from './services/controllers/authController.js';
+import { AuthContext } from './context/authContext.js';
+import useAuthController from './controllers/authController.js';
 
 export default function App() {
-  // const { isLoggedIn } = useAuthController();
+  const { isLoggedIn, login, logout, register } = useAuthController();
+
+  useEffect(() => {
+    console.log('isLoggedIn changed:', isLoggedIn);
+  }, [isLoggedIn]);
+
 
   return (
-    <AuthProvider>
+    <AuthContext.Provider value={{ isLoggedIn, login, logout, register }}>
       <View style={globalStyles.container}>
-        {false ? <ActivityScreen /> : <ActivityScreen />}        
+        {true ? <ActivityScreen /> : <AccessScreen />}        
         <StatusBar style="auto" />
       </View>
-    </AuthProvider>
+    </AuthContext.Provider>
   );
 }

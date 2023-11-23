@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { api } from '../api'
+import { activityApi } from '../services/api'
 
 export const useActivityController = () => {
     const [list, setList] = useState([]);
@@ -9,12 +9,12 @@ export const useActivityController = () => {
     }, []);
   
     const saveItem = async (obj) => {
-      const response = await api.post("/items.json", obj);
+      const response = await activityApi.post("/items.json", obj);
       return await loadList();
     };
   
     const loadList = () => {
-      return api.get("/items.json")
+      return activityApi.get("/items.json")
         .then((info) => {
           const newList = [];
           for (let key in info.data) {
@@ -28,7 +28,7 @@ export const useActivityController = () => {
     };
   
     const deleteItem = (id) => {
-      return api.delete(`/items/${id}.json`)
+      return activityApi.delete(`/items/${id}.json`)
         .then(() => {
           return loadList();
         })
@@ -39,7 +39,7 @@ export const useActivityController = () => {
     };
   
     const editItem = (id, newObject) => {
-      return api.put(`/items/${id}.json`, newObject)
+      return activityApi.put(`/items/${id}.json`, newObject)
         .then(() => {
           return loadList();
         })
