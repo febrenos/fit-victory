@@ -1,6 +1,6 @@
 import React from 'react';
-import {AccessNavigator} from '../../navigator/access'
+import {NotLoggedNavigator} from '../../navigator/notLogged'
 
-export const AccessScreen = () => {
-  return <AccessNavigator />;
+export const NotLoggedScreen = () => {
+  return <NotLoggedNavigator />;
 };

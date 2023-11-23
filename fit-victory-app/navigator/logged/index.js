@@ -7,7 +7,7 @@ import { useActivityController } from '../../controllers/activityController';
 
 const { Screen, Navigator } = createBottomTabNavigator();
 
-export const ActivityNavigator = () => {
+export const LoggedNavigator = () => {
   const { list, save, load, del, edit } = useActivityController();
 
   return (

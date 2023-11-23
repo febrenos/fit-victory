@@ -7,5 +7,4 @@ export const activityApi = axios.create({
 //http://localhost:8080
 export const authApi = axios.create({
   baseURL: "http://192.168.15.91:8080", // Substitua pelo seu endereço IP local ipconfig
-  timeout: 5000,
 });

@@ -12,7 +12,7 @@ import { Login, Register} from '../../components/index.js';
 
 const Stack = createStackNavigator();
 
-export const AccessNavigator = () => {
+export const NotLoggedNavigator = () => {
 
   return (
     <NavigationContainer>

@@ -1,6 +1,6 @@
 import React from 'react';
-import {ActivityNavigator} from '../../navigator/activity'
+import {LoggedNavigator} from '../../navigator/logged'
 
-export const ActivityScreen = () => {
-  return <ActivityNavigator />;
+export const LoggedScreen = () => {
+  return <LoggedNavigator />;
 };
