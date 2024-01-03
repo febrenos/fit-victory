@@ -16,7 +16,7 @@
 
 OBS: API do firebase está com instabilidade do proprio google no dia de hoje 24/11/2023
 
-API1
+# API1
 - https://febrenos.pythonanywhere.com/bot
 API para conversar com chat com integraçao a google places api, api de clima (ainda nao estamos utilizando essa api)
 
@@ -24,7 +24,7 @@ API para conversar com chat com integraçao a google places api, api de clima (a
 
 ---
 
-API2
+# API2
 
 API de autenticação do usuário, deve ser rodada em java no intellij
 com jdk 17 e gradle 7.6.1
@@ -51,7 +51,8 @@ POST http://localhost:8080/register
 
 ---
 
-API3 (fire base, realtime dataBase)
+# API3 (fire base, realtime dataBase)
+
 https://fiap-2023-2tdst-default-rtdb.firebaseio.com
 https://fitvictory-c924e-default-rtdb.firebaseio.com
 
