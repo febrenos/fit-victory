@@ -1,5 +1,10 @@
 # fit-victory
 
+<p>
+  <img src="./listActivity.png" width="200" title="hover text">
+  <img src="./registerActivity.png" width="200" title="hover text">
+</p>
+
 ## INTEGRANTES
 - FELIPE BRENO
 - LUCAS VINICIUS
