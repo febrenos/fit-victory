@@ -5,6 +5,10 @@
   <img src="./registerActivity.png" width="200" title="hover text">
 </p>
 
+Aceitamos o desafio proposto pela Hapvida e FIAP com o objetivo de impactar de forma significativa o setor da saúde.
+
+Implementamos um sistema de autenticação eficiente, utilizando tokens JWT, em uma API desenvolvida com Java Spring Boot. A gestão segura de credenciais, incluindo login e senha, foi integrada de forma robusta ao banco de dados Oracle. No frontend, optamos pelo React Native Expo, proporcionando uma interface unificada e intuitiva, totalmente integrada ao backend.
+
 ## INTEGRANTES
 - FELIPE BRENO
 - LUCAS VINICIUS
